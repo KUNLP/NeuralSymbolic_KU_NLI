@@ -6,6 +6,7 @@ Code for HCLT 2021 paper: *[Natural Language Inference using Dependency Parsing]
 - PyTorch 1.9.0
 - tokenizers 0.10.3
 - Transformers 4.6.1
+- 그외 `requirement.txt` 참고
 
 
 All code only supports running on Linux.
