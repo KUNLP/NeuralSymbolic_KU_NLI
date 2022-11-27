@@ -1,12 +1,14 @@
 # Natural Language Inference using Dependency Parsing
 Code for HCLT 2021 paper: *[Natural Language Inference using Dependency Parsing](https://koreascience.kr/article/CFKO202130060562801.page?&lang=ko)*
 
-## Dependencies
-- python 3.7
-- PyTorch 1.9.0
-- tokenizers 0.10.3
-- Transformers 4.6.1
-- 그외 `requirement.txt` 참고
+
+## Setting up the code environment
+
+```
+$ virtualenv --python=python3.7 venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
 
 
 All code only supports running on Linux.
