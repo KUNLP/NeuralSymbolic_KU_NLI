@@ -55,7 +55,7 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 
 * 입력 문장 쌍에 대한 어절 단위 의존 구문 구조(data/parsing/klue-nli-v1_train.json)를 src/dependency/merge.py를 통해 입력 문장 쌍에 대한 청크 단위 의존 구문 구조로 변환(data/merge/klue-nli-v1_train.json)
 
-* [roberta/init_weight](https://huggingface.co/klue/roberta-base)의 vocab.json에 청크 단위로 구분해주는 스폐셜 토큰(Special Token) /</WORD>/ 추가
+* [roberta/init_weight](https://huggingface.co/klue/roberta-base)의 vocab.json에 청크 단위로 구분해주는 스폐셜 토큰(Special Token) `<WORD>` 추가
 
 ## Train & Test
 
