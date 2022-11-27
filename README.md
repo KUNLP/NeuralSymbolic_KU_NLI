@@ -51,9 +51,9 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 └── README.md
 ```
 
-* data/klue-nli-v1_train.json를 의존 구문 분석 모델을 활용하여 입력 문장 쌍에 대한 어절 단위 의존 구문 구조 추출 -> data/parsing/klue-nli-v1_train.json
+* 원시 데이터(data/klue-nli-v1_train.json)를 의존 구문 분석 모델을 활용하여 입력 문장 쌍에 대한 어절 단위 의존 구문 구조 추출(data/parsing/klue-nli-v1_train.json)
 
-* 입력 문장 쌍에 대한 어절 단위 의존 구문 구조를 src/dependency/merge.py를 통해 입력 문장 쌍에 대한 청크 단위 의존 구문 구조로 변환 -> data/merge/klue-nli-v1_train.json
+* 입력 문장 쌍에 대한 어절 단위 의존 구문 구조(data/parsing/klue-nli-v1_train.json)를 src/dependency/merge.py를 통해 입력 문장 쌍에 대한 청크 단위 의존 구문 구조로 변환(data/merge/klue-nli-v1_train.json)
 
 ## Train & Test
 
