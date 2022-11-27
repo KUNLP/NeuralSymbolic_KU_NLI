@@ -1,0 +1,8 @@
+numpy
+pandas
+tqdm
+tokenizers
+attrdict
+fastprogress
+transformers==4.6.1
+torch==1.7.0+cu110
