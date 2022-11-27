@@ -1,8 +1,8 @@
 numpy
 pandas
 tqdm
-tokenizers
+tokenizers==0.10.3
 attrdict
 fastprogress
 transformers==4.6.1
-torch==1.7.0+cu110
+torch==1.9.0+cu111
