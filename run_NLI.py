@@ -97,9 +97,8 @@ if __name__ == '__main__':
     #cli_parser.add_argument("--num_labels", type=int, default=3)
 
     # roberta
-    #cli_parser.add_argument("--model_name_or_path", type=str, default="./roberta/init_weight_ver1")
-    #cli_parser.add_argument("--cache_dir", type=str, default="./roberta/init_weight_ver1")
-    ## (baseline)checkout-1074: acc = 85.13  # checkout-4 89.91
+    cli_parser.add_argument("--model_name_or_path", type=str, default="./roberta/init_weight")
+    cli_parser.add_argument("--cache_dir", type=str, default="./roberta/init_weight")
 
     # ------------------------------------------------------------------------------------------------
     cli_parser.add_argument("--data_dir", type=str, default="./data/merge")
