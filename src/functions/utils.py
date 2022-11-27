@@ -5,18 +5,11 @@ import numpy as np
 import os
 
 
-from src.functions.processor5 import (
-#from src.functions.processor_baseline import (
-#from src.functions.processor_sentence import (
+from src.functions.processor import (
     KLUE_NLIV1Processor,
     klue_convert_examples_to_features
 )
 
-from src.functions.processor_en_baseline import (
-#from src.functions.processor5_english import (
-    NLIV1Processor,
-    convert_examples_to_features
-)
 
 def init_logger():
     logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
@@ -72,21 +65,8 @@ def load_examples(args, tokenizer, evaluate=False, output_examples=False, do_pre
         examples = processor.get_train_examples(os.path.join(args.data_dir),
                                                 filename=args.train_file)
 
-    # features = (prem_features, hypo_features)
-    if len(set(input_dir.split("/")).intersection(["snli", "mnli", "qnli", "hans", "sick"])) != 0:
-        features, dataset = convert_examples_to_features(
-            examples=examples,
-            tokenizer=tokenizer,
-            max_seq_length=args.max_seq_length,
-            is_training=not evaluate,
-            return_dataset="pt",
-            threads=args.threads,
-            prem_max_sentence_length=args.prem_max_sentence_length,
-            hypo_max_sentence_length=args.hypo_max_sentence_length,
-            language=args.model_name_or_path.split("/")[-2]
-        )
-    else:
-        features, dataset = klue_convert_examples_to_features(
+
+    features, dataset = klue_convert_examples_to_features(
         examples=examples,
         tokenizer=tokenizer,
         max_seq_length=args.max_seq_length,
