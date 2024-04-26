@@ -62,6 +62,7 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 ## Train & Test
 
 ### Pretrained Model
+[klue/roberta-base](https://huggingface.co/klue/roberta-base)
 
 ### How To Run
 ```
