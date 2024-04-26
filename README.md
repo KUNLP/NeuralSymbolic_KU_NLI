@@ -59,8 +59,9 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 * [roberta/init_weight](https://huggingface.co/klue/roberta-base)/vocab.json에 청크 단위로 구분해주는 스폐셜 토큰(Special Token) `<WORD>` 추가
 
 
-
 ## Train & Test
+
+### Pretrained Model
 
 ```
 python run_NLI.py
