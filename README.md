@@ -63,6 +63,7 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 
 ### Pretrained Model
 
+### How To Run
 ```
 python run_NLI.py
 ```
