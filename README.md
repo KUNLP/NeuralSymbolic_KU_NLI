@@ -13,7 +13,7 @@ $ pip install -r requirements.txt
 
 All code only supports running on Linux.
 
-# Model Structure
+## Model Structure
 
 <img src='model.png' width='1000'>
 
