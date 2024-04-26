@@ -10,8 +10,12 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-
 All code only supports running on Linux.
+
+
+## Model Structure
+
+<img src='model.png' width='1000'>
 
 ## Data
 
@@ -55,9 +59,6 @@ Korean Language Understanding Evaluation-Natural Language Inference version1: *[
 * [roberta/init_weight](https://huggingface.co/klue/roberta-base)/vocab.json에 청크 단위로 구분해주는 스폐셜 토큰(Special Token) `<WORD>` 추가
 
 
-## Model Structure
-
-<img src='model.png' width='1000'>
 
 ## Train & Test
 
